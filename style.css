@@ -1,0 +1,106 @@
+/* GENERAL STYLES */
+body {
+  font-family: 'Russo One', sans-serif;
+  background: #3b2b1f; /* dark brown background */
+  color: #f8e5c0; /* retro beige text */
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(to right, #b22222, #8b0000);
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  border-bottom: 5px solid #ffcc00;
+  text-shadow: 2px 2px 4px black;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+header p {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1rem;
+  margin: 5px 0 0;
+  color: #ffe680;
+}
+
+/* CONTENT CONTAINER */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* POSTS */
+.post {
+  background: #2a1e15;
+  border: 2px solid #ffcc00;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+.post-header {
+  padding: 15px;
+  cursor: pointer;
+  background: #5c4033;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #ffe680;
+  border-bottom: 2px solid #ffcc00;
+}
+
+.post-content {
+  padding: 15px;
+  display: none;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.post.active .post-content {
+  display: block;
+  background: #402d23;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  background: #1f140e;
+  border-top: 3px solid #ffcc00;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  header p {
+    font-size: 0.9rem;
+  }
+  .post-header {
+    font-size: 1rem;
+  }
+  .post-content {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+  header p {
+    font-size: 0.8rem;
+  }
+}
